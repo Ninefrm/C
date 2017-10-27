@@ -38,7 +38,7 @@ struct Player{
     double m_Armor;
     double m_MagicResist;
 
-    //std::vector<Guns> m_array;
+    //std::vector<Guns*> m_array; virtuales
 };
 
 #endif
