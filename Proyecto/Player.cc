@@ -17,6 +17,7 @@
     m_MagicResist=3;
   }
   Player::~Player(){
+    std::cout<<"\n \n \t \t GAME OVER";
   }
   const std::string Player::Name() const{
     return m_name;

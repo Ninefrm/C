@@ -4,6 +4,7 @@
 //librerias
 #include <string>
 #include <vector>
+#include <iostream>
 //
 
 struct Player{

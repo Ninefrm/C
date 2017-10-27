@@ -5,10 +5,11 @@ using namespace std;
 
 int main(){
   Player P1("Max");
-  cout<<P1.Damage();
+
+  cout<<"Daño: "<<P1.Damage()<<endl;
   P1.Damage(10);
-  cout<<P1.Name();
-  cout<<P1.Damage();
+  cout<<"Nombre: "<<P1.Name()<<endl;
+  cout<<"Daño: "<<P1.Damage()<<endl;
   P1.Name("Maximiliano");
-  cout<<P1.Name();
+  cout<<"Nombre: "<<P1.Name()<<endl;
 }
