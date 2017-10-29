@@ -12,4 +12,5 @@ int main(){
   cout<<"Daño: "<<P1.Damage()<<endl;
   P1.Name("Maximiliano");
   cout<<"Nombre: "<<P1.Name()<<endl;
+  cout<<P1.Life()<<endl;
 }
