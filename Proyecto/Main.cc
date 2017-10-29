@@ -13,4 +13,5 @@ int main(){
   P1.Name("Maximiliano");
   cout<<"Nombre: "<<P1.Name()<<endl;
   cout<<P1.Life()<<endl;
+  cout<<P1.AttackSpeed()<<endl;
 }
