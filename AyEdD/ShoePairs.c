@@ -1,6 +1,8 @@
 #include <iostream>
 #include <array>
 
+//SAMUEL MAXIMILIANO FONSECA ROMERO
+
 using namespace std;
 
 int main(){
@@ -28,7 +30,7 @@ int main(){
         Pares=(Derecho[i]+Izquierdo[i])/2+Pares;
       }
   }
-      cout<<"Existen: "<<Pares<<endl;
+      cout<<"Existe: "<<Pares<<" Pares."<<endl;
   delete[] NZ;
   return 0;
 }
