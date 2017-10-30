@@ -45,5 +45,16 @@
       return false;
     }
     int n_inter=0;
-    
+    Line test=line(Point(-1.0.-1.0),pt);
+    Line side;
+    for(int i=0;i<m_vpoint.size();i++){
+      //Si i+1 es menor a m_vpoint.size() entonces será i++ si no, será 0.
+      j=(i+1<m_vpoint.size())?i+1:0;
+      side =Line(m_vpoint[i],m_vpoint[j]);
+      if(test.inter(size))n_inter++;
+    }
+
+    if(n_inter&1==0)return false;
+
+    return true;
   }
