@@ -13,7 +13,7 @@ int main(){
   int Movimiento;
   for(int i=0; i<=8;i++) Gato.push_back(0);
   imp(Gato);
-  cout<<"Usa el pad númerico para elegir la posición de tu turno"<<endl<<"{ 7 8 9 }"<<endl<<"{ 4 5 6 }"<<endl<<"{ 1 2 3 }"<<endl<<". X equivale a 1, y O equivale a 2. 0 Es un espacio vacio."<<endl;
+  cout<<"Usa el pad númerico para elegir la posición de tu turno"<<endl<<"{ 7 8 9 }"<<endl<<"{ 4 5 6 }"<<endl<<"{ 1 2 3 }"<<endl<<"X equivale a 1, y O equivale a 2. 0 Es un espacio vacio."<<endl;
 
   for(int i=0;i<=8;i++){
   cout<<"¿Donde deseas colocar "<<Jugador(i)<<"?."<<endl;
@@ -71,12 +71,12 @@ bool win(vector <int> v){
       return true;
     }
   }
-  if((v[Decision(2-1)]== v[Decision(2)] && v[Decision(2+1)]) == v[Decision(2)]){
+  if(v[Decision(2-1)]== v[Decision(2)] && v[Decision(2+1)] == v[Decision(2)]){
     if(v[Decision(2)]==0) return false;
     cout<<"Ganó: "<<v[Decision(2)]<<endl;
     return true;
   }
-  if((v[Decision(4-3)] == v[Decision(4)] && v[Decision(4+3)]) == v[Decision(4)]){
+  if(v[Decision(4-3)] == v[Decision(4)] && v[Decision(4+3)] == v[Decision(4)]){
     if(v[Decision(4)]==0) return false;
     cout<<"Ganó: "<<v[Decision(4)]<<endl;
     return true;
